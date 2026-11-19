@@ -1,0 +1,26 @@
+body { margin: 0; overflow: hidden; font-family: sans-serif; user-select: none; background: #000; }
+#start-screen {
+  position: absolute; inset: 0; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  background: linear-gradient(135deg, #ff5e62, #ff9966, #1e90ff);
+  color: #fff; z-index: 20; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+#start-btn {
+  padding: 12px 28px; font-size: 18px; font-weight: bold;
+  background: #ff007f; color: #fff; border: none; border-radius: 6px;
+  cursor: pointer; margin-top: 15px;
+}
+#hud { position: absolute; inset: 0; pointer-events: none; color: #fff; font-weight: bold; text-shadow: 1px 1px 2px #000; }
+#wanted { position: absolute; top: 16px; right: 20px; font-size: 26px; color: #ffd700; letter-spacing: 4px; }
+#speed { position: absolute; bottom: 24px; right: 24px; font-size: 22px; }
+#objective { position: absolute; top: 16px; left: 20px; font-size: 16px; background: rgba(0,0,0,0.6); padding: 8px 14px; border-radius: 4px; }
+#mission-complete {
+  position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);
+  font-size: 32px; color: #00ffcc; background: rgba(0,0,0,0.85);
+  padding: 16px 28px; border-radius: 8px; border: 2px solid #00ffcc;
+}
+#minimap {
+  position: absolute; bottom: 20px; left: 20px;
+  border: 3px solid rgba(255,255,255,0.8); border-radius: 80px;
+  background: rgba(10,20,30,0.85);
+}

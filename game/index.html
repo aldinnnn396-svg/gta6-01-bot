@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palma Bay: Sun City</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="start-screen">
+    <h1>PALMA BAY: SUN CITY</h1>
+    <p>Sun-soaked island city adventure</p>
+    <p>Drive / Walk: <b>W A S D</b> | Enter / Exit Car: <b>E</b></p>
+    <button id="start-btn">EXPLORE PALMA BAY</button>
+  </div>
+  <div id="hud" style="display:none;">
+    <div id="wanted">★★★★★</div>
+    <div id="speed">0 KM/H</div>
+    <div id="objective">Objective: Drive to the Palm Point Beacon</div>
+    <div id="mission-complete" style="display:none;">MISSION COMPLETE!</div>
+    <canvas id="minimap" width="160" height="160"></canvas>
+  </div>
+  <script src="vendor/three.min.js"></script>
+  <script src="world.js"></script>
+  <script src="city.js"></script>
+  <script src="player.js"></script>
+  <script src="traffic.js"></script>
+  <script src="hud.js"></script>
+  <script src="mission.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
